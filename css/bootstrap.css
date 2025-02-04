@@ -1,0 +1,439 @@
+/*
+.carousel-indicators {
+
+    margin-bottom: 20%;
+    margin-right: 2%;
+}
+.carousel-caption {
+    margin-bottom: 20%;
+} */
+ *{
+    border-radius: 0px;
+ }
+ /* ---------header--------------- */
+
+
+ /* -----------HERO----------- */
+ #Hero .overlay{
+    background-color:rgba(0, 0, 0, 0.606);
+    height: 600px;
+ }
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+/* .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 20%;
+    margin-right: 2%;
+
+} */
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/* .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 7%;
+    margin-right: 2%;
+    flex-direction: column;
+    align-items: end;
+} */
+#hero img{
+    height: 600px;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 7%;
+    margin-right: 2%;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 15%;
+}
+/* Overlay for carousel images */
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+    z-index: 1; /* Ensure the overlay is above the image */
+  }
+  
+  .carousel-item {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    z-index: 2; /* Make sure captions are above the overlay */
+  }
+  
+
+/* ------------ABOUT US------- */
+.list-index{
+    z-index: 5;
+}
+.about-us-in-no{
+    background-color: #f9f9f9;
+}
+
+
+.no-border .list-group-item , .no-border .about-us-card {
+    border: none;
+    border-radius: 0;
+}
+.no-border .list-group-item:hover i , .no-border .list-group-item:hover h5 {
+ color: blue;
+}
+  .about-us .row .list-index{
+    position: static;
+}
+@media (min-width:767px){
+    .about-us .row .list-index{
+        position: relative;
+        left: 55px;
+
+    }
+}
+
+
+
+
+
+.title h1::first-letter{
+    font-size: 50px;
+}
+.title h1::before{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color:blue;
+    position: absolute;
+    right: 100%;
+    top: 55%;
+
+}
+.title h1::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    left: 100%;
+    top: 55%;
+
+}
+/* span */
+h1 span::first-letter{
+    font-size: 50px;
+}
+.title span::before{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color:blue;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+
+}
+.title span::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+
+}
+
+
+/* ---------------------OUR SERVICES--------- */
+#services {
+  background-image: url(bgservice.jpeg);
+  background-attachment: fixed;
+
+}
+
+#services .overlay{
+    background-color: rgba(0, 0, 0, 0.689); width: 100%;
+    /* height: 800px; */
+
+}
+
+.service-box {
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.box-overlay {
+
+    top: 90%;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px !important;
+    color: black !important;
+    transition: all 0.7s ease ;
+    padding-top: 5%;
+}
+
+.service-box:hover .box-overlay {
+    opacity: 1;
+    top: 0;
+
+}
+
+
+/* --------------our work------ */
+
+.breadcrumb-item a:hover {
+    color: #007bff !important; 
+  }
+.work-box {
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.work-overlay {
+
+    top: 70%;
+    left: 13%;
+    width: 80% !important;
+    height: 25%;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transform: scalex(0);
+    transition: all 1s;
+    
+}
+
+.work-box:hover .work-overlay {
+    opacity: 0.85;
+    transform: scalex(1);
+
+}
+
+
+
+/* ---------------TEAM------------ */
+.team-box {
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.team-social{
+    padding-top:2% ;
+    padding-bottom:3% ;
+}
+.team-overlay {
+
+    top: 75%;
+    
+    left:10%;
+    width: 80% !important;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    padding-top: 5%;
+    opacity: 1;
+    box-shadow: 0 -0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.15);
+    
+    
+    transition: all 0.7s ease;
+    
+}
+.team-box:hover .team-overlay {
+    opacity: 1;
+    top: 45%;
+    
+    
+}
+#team .hr-black{
+    height: 3px;
+    width: 100%;
+    
+   color: black !important;
+   opacity: 1;
+}
+.team-box:hover .hr-black{
+    display: none;
+}
+
+
+/* ----------OUR BLOG-------- */
+#blog .blog-box , .img-box{
+    overflow: hidden;
+}
+#blog .blog-img{
+    overflow: hidden;
+    /* transition: all 3s ease; */
+}
+.blog-img{
+    transition: all 1s ease;
+    overflow: hidden;
+
+}
+.blog-box:hover .blog-img{
+    transform: skewy(-3deg) scale(1.2) ;
+    
+    
+}
+#blog .hr-abs{
+    height: 3px;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    width: 25%;
+    transition: all 1s ease;
+    
+}
+#blog .hr-abs1{
+ left: 0px;
+    top: 1px;
+}
+#blog .blog-box:hover .hr-abs{
+    width: 100%;
+}
+#blog .blog-box:hover .social-col{
+    background-color: #007bff !important;
+}
+
+.h-blue:hover{
+    color: #007bff;
+}
+#blog .title span::before{
+    display: none;
+}
+#blog .title span::after{
+    display: none;
+}
+
+
+
+
+#client .title h1::before{
+display: none;
+}
+
+#client .title span::before{
+    display: none;
+    }
+
+#purchase i{
+    font-size: 90px;
+}    
+footer hr{
+    opacity: 1;
+    height: 2px;
+}
+
+
+#c-hero{
+    background-image: url(slider1.jpg);
+    
+    position: relative;
+}
+#c-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.651); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensures overlay is behind content */
+  }
+
+  #c-hero .text-center {
+    z-index: 2; /* Places content above the overlay */
+    position: relative;
+  }
+
+  #c-hero h1{
+    padding-bottom: 150px !important;
+    padding-top: 150px !important;
+
+  }
+  .rounded-pill-start {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.rounded-pill-end {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#services i{
+    font-size: 55px !important;
+}
